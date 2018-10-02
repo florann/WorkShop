@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
     @font-face {
     font-family: "titillium-web";
 	src: url('police/titillium-web.ttf');
+}
+
+img {
+    display: inline-block;
 }
 
 .menus{
@@ -23,14 +29,14 @@
     background-color: #193e5f;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 5%;
     font-family: "titillium-web", serif;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 0% 10%;/*8px 8px 8px 32px;*/
     text-decoration: none;
-    font-size: 25px;
+    font-size:20px; /*25px;*/
     color: #fff;
     display: block;
     transition: 0.3s;
@@ -42,24 +48,29 @@
 
 .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 1%;
+    right: 1%;
+    font-size:auto ;
+    margin-left: 15%;
 }
 
 
 @media screen and (max-height: 450px) {
+    
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 </style>
+</head>
 
+<body>
 
 <div id="mySidenav" class="sidenav">
+   
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
+  <img src="Include/images/logoHEP.png" alt="logoHEP"  style="margin-left:5%; margin-right:25%; width: auto; height: auto; max-width: 70%; max-height: 70%">
+  <a href="#">Acceuil</a>
+  <a href="#">Ecoles</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
 </div>
@@ -68,13 +79,13 @@
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "30%";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+  </body>   
      
-
 </html> 
