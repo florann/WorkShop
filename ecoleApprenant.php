@@ -25,12 +25,12 @@ font-family: "titillium-web";
     img.logo
     {
     position:inline;
-    margin:2%;
+    margin:5%;
 	width: auto; 
-    height: 100px; 
+    height: 150px; 
     border-radius:50%;
-	/*max-width: 200px
-	max-height: 250px*/
+	max-width: 200px;
+	max-height: 250px
     }
     /* The container */
 .container {
@@ -122,7 +122,7 @@ font-family: "titillium-web";
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 100px;
+    width: 180px;
     background-color: #004e79;
     color: #fff;
     text-align: center;
