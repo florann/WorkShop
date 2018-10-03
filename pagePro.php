@@ -7,10 +7,10 @@
   <title>heLpYON-Professionnel</title>
 
 
-  <img src="Include/images/logo-help-long.png" alt="logo-help"  style="margin-left:2%; margin-right:2%; width: auto; height: auto; max-width: 25%; max-height: 25%">
+    <a href="PageAccueil.php"><img src="Include/images/logo-help-long.png" alt="logo-help"  style="margin-left:2%; margin-right:2%; width: auto; height: auto; max-width: 25%; max-height: 25%"></a>
   </br>
   <?php
-  include("Include/Slide.php");
+  include("Include/slide.php");
   ?>
   </head>
   <body>

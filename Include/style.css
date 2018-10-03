@@ -3,6 +3,9 @@ font-family: "titillium-web";
 	src: url('police/titillium-web.ttf');
 }
 
+body{
+	background-color: #e5e5e5;
+}
 #cube{
 	margin-left:5%;
 	margin-right:5%;
