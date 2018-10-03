@@ -105,7 +105,7 @@ margin:auto;
 <div class="row">
  <div class="col-md-1 col-xs-0"></div>
 
-<a href ="./richesse.php.php">
+<a href ="./richesse.php">
  <div id="choix" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded img-responsive"><p id="text">POURQUOI CHOISIR LE CAMPUS HEP?</p></div></a>
 
  <div class="col-md-2 col-xs-2"></div>
