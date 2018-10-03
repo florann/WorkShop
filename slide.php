@@ -72,7 +72,7 @@ img {
   <a href="#">Acceuil</a>
   <a href="#">Ecoles</a>
   <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="http://www.hep-education.com/contact/">Contact</a>
 </div>
 
 <span style="cursor:pointer" class="menus" onclick="openNav()">&#9776; Menu</span>
