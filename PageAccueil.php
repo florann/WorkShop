@@ -7,7 +7,7 @@ include('./Include/bootstrap.php');
 <head>
 
 <?php
-	include('./Include/Menu.php');
+	include('./Include/slide.php');
 ?>
 
 
@@ -107,7 +107,7 @@ margin:auto;
 
 <div class="row">
 
- <div class="col-md-4 col-xs-4  col-xs-offset-4 col-md-offset-4 "><img id="logoAc"src="./Ressource/logoHEP.png"></div>
+ <div class="col-md-4 col-xs-4  col-xs-offset-4 col-md-offset-4 "><img id="logoAc"src="./Include/images/logoHEP.png"></div>
 </div>
 
 	<div id="haut" class="container">
