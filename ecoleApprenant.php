@@ -17,27 +17,11 @@
 
     <H2>Dans quel secteur cherchez vous un apprenant?</H2>
 
-<form name="metier" action="" method="post">
-   <input type="checkbox" name="metier[]" value="Marketing " />Marketing 
-   <input type="checkbox" name="metier[]" value="Communication" />Communication
-   <input type="checkbox" name="metier[]" value="Architecture" />Architecture<br>
-   <input type="checkbox" name="metier[]" value="Informatique" />Informatique
-   <input type="checkbox" name="metier[]" value="Internationnal" />Internationnal
-   <input type="checkbox" name="metier[]" value="RH" />Ressources Humaines<br>
-   <input type="checkbox" name="metier[]" value="DD" />Développement durable
-   <input type="checkbox" name="metier[]" value="Agriculture" />Agriculture
-   <input type="checkbox" name="metier[]" value="Journalisme" />Journalisme<br>
-   <input type="checkbox" name="metier[]" value="Droit" />Droit
-   <input type="checkbox" name="metier[]" value="Entrepreneuriat" />Entrepreneuriat
-   <input type="checkbox" name="metier[]" value="Immobilier" />Immobilier<br>
-   <input type="checkbox" name="metier[]" value="Finance" />Finance
-   <input type="checkbox" name="metier[]" value="Santé" />Santé
-   <input type="checkbox" name="metier[]" value="Tourisme" />Tourisme<br>
-   <input type="checkbox" name="metier[]" value="Pro") />Professionnaliser ses équipes 
-   <input type="checkbox" name="metier[]" value="BilanPro") />Bilan professionnel <br>
-   <input type="submit" value="Rechercher" />
-</form>
 <style>
+@font-face {
+font-family: "titillium-web";
+	src: url('Include/police/titillium-web.ttf');
+}
     img.logo
     {
     position:center;
@@ -47,32 +31,186 @@
 	/*max-width: 200px
 	max-height: 250px*/
     }
+    /* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "titillium-web",serif;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #004e79;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #004e79;
+    font-family: "titillium-web",serif;
+}
+
 </style>
+<form name="metier" action="" method="post">
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Marketing" />Marketing/Management/Commerce
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Communication" />Communication
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Architecture" />Architecture/Art/Design<br>
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Informatique" />Informatique/web/Digital
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Internationnal" />Internationnal
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="RH" />Ressources Humaines<br>
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="DD" />Développement durable
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Agriculture" />Agriculture/Environnement Urbanisme
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Journalisme" />Journalisme/Production<br>
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Droit" />Droit/Sciences Politique/Humanités
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Entrepreneuriat" />Entrepreneuriat/Entrepreneuriat Social
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Immobilier" />Immobilier<br>
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Finance" />Finance/Comptabilité/Gestion
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Santé" />Santé/Social
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Tourisme" />Tourisme/Hôtellerie<br>
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="Pro") />Professionnaliser ses équipes/VAE/Formation continue
+   <span class="checkmark"></span>
+</label>
+<label class="container">
+   <input type="checkbox" name="metier[]" value="BilanPro") />Bilan professionnel/Orientation/Accompagnement professionnel<br>
+   <span class="checkmark"></span>
+</label>
+   <input class="button"type="submit" value="Rechercher" />
+</form>
+
 <?php
-$Ecoles['3A'] = array('code'=>0b01001010000010010,'img'=>"3a.png");
-$Ecoles['CBIO'] = array('code'=>0b0000000000000001,'img'=>"cbio.png");
-$Ecoles['CEFAM'] =array('code'=>0b10001000000000010,'img'=>"cefam.png");
-$Ecoles['CFA'] =array('code'=>0b11010000000010100,'img'=>"cfa.png");
-$Ecoles['CIEFA'] =array('code'=>0b10010100000010000,'img'=>"ciefa.png");
-$Ecoles['EPSI'] =array('code'=>0b00010000000000010,'img'=>"epsi.png");
-$Ecoles['EPSAIL'] =array('code'=>0b00100000000000000,'img'=>"esail.png");
-$Ecoles['ESAM'] =array('code'=>0b10001000010010000,'img'=>"esam.png");
-$Ecoles['ICL'] =array('code'=>0b10001000000000010,'img'=>"icl.png");
-$Ecoles['IDRAC_BS'] =array('code'=>0b10001000000000010,'img'=>"idracbs.png");
-$Ecoles['IDRAC_EE'] =array('code'=>0b10011100001010100,'img'=>"idracee.png");
-$Ecoles['IEFT'] =array('code'=>0b00000000000000100,'img'=>"ieft.png");
-$Ecoles['IET'] =array('code'=>0b10000011000000010,'img'=>"iet.png");
-$Ecoles['IFAG'] =array('code'=>0b11010100000010000,'img'=>"ifag.png");
-$Ecoles['IGEFI'] =array('code'=>0b00000000000010010,'img'=>"igefi.png");
-$Ecoles['IGS_FC'] =array('code'=>0b10001100000000010,'img'=>"igs.png");
-$Ecoles['IGS_RH'] =array('code'=>0b00000100000000010,'img'=>"igsfc.png");
-$Ecoles['IMIS'] =array('code'=>0b10001000000001010,'img'=>"imis.png");
-$Ecoles['IMSI'] =array('code'=>0b10000000000100010,'img'=>"imsi.png");
-$Ecoles['IPI'] =array('code'=>0b00010000000000010,'img'=>"ipi.png");
-$Ecoles['ISPCA'] =array('code'=>0b01000000100000000,'img'=>"iscpa.png");
-$Ecoles['OSS'] =array('code'=>0b00010000000000010,'img'=>"oss.png");
-$Ecoles['SDC'] =array('code'=>0b01000000000000010,'img'=>"sdc.png");
-$Ecoles['WIS'] =array('code'=>0b11010000000000000,'img'=>"wis.png");
+$Ecoles['3A'] = array('code'=>0b01001010000010010,'img'=>"3a.png",'site'=>"http://www.ecole3a.edu/");
+$Ecoles['CBIO'] = array('code'=>0b0000000000000001,'img'=>"cbio.png",'site'=>"https://www.cbio-lyon.fr/");
+$Ecoles['CEFAM'] =array('code'=>0b10001000000000010,'img'=>"cefam.png",'site'=>"http://www.cefam.fr/");
+$Ecoles['CFA'] =array('code'=>0b11010000000010100,'img'=>"cfa.png",'site'=>"http://www.cfa-igslyon.com/");
+$Ecoles['CIEFA'] =array('code'=>0b10010100000010000,'img'=>"ciefa.png",'site'=>"http://www.ciefa.com/");
+$Ecoles['EPSI'] =array('code'=>0b00010000000000010,'img'=>"epsi.png",'site'=>"http://www.epsi.fr/");
+$Ecoles['ESAIL'] =array('code'=>0b00100000000000000,'img'=>"esail.png",'site'=>"http://www.esail.fr/");
+$Ecoles['ESAM'] =array('code'=>0b10001000010010000,'img'=>"esam.png",'site'=>"http://www.esam-ecoles.com/");
+$Ecoles['ICL'] =array('code'=>0b10001000000000010,'img'=>"icl.png",'site'=>"http://www.icl.fr/");
+$Ecoles['IDRAC_BS'] =array('code'=>0b10001000000000010,'img'=>"idracbs.png",'site'=>"http://www.ecoles-idrac.com/");
+$Ecoles['IDRAC_EE'] =array('code'=>0b10011100001010100,'img'=>"idracee.png",'site'=>"http://www.fc-idrac.fr/");
+$Ecoles['IEFT'] =array('code'=>0b00000000000000100,'img'=>"ieft.png",'site'=>"http://www.ieftourisme.com/");
+$Ecoles['IET'] =array('code'=>0b10000011000000010,'img'=>"iet.png",'site'=>"http://www.iet.fr/");
+$Ecoles['IFAG'] =array('code'=>0b11010100000010000,'img'=>"ifag.png",'site'=>"http://www.ifag.com/");
+$Ecoles['IGEFI'] =array('code'=>0b00000000000010010,'img'=>"igefi.png",'site'=>"http://www.igefi.net/");
+$Ecoles['IGS_FC'] =array('code'=>0b10001100000000010,'img'=>"igs.png",'site'=>"http://www.formationcontinue.groupe-igs.fr/");
+$Ecoles['IGS_RH'] =array('code'=>0b00000100000000010,'img'=>"igsfc.png",'site'=>"http://www.igs-ecoles.com/");
+$Ecoles['IMIS'] =array('code'=>0b10001000000001010,'img'=>"imis.png",'site'=>"http://www.imislyon.com/");
+$Ecoles['IMSI'] =array('code'=>0b10000000000100010,'img'=>"imsi.png",'site'=>"http://www.imsi-formation.com/");
+$Ecoles['IPI'] =array('code'=>0b00010000000000010,'img'=>"ipi.png",'site'=>"http://www.ipi-ecoles.com/");
+$Ecoles['ISPCA'] =array('code'=>0b01000000100000000,'img'=>"iscpa.png",'site'=>"http://www.iscpa-ecoles.com/");
+$Ecoles['OSS'] =array('code'=>0b00010000000000010,'img'=>"oss.png",'site'=>"http://www.opensourceschool.fr/");
+$Ecoles['SDC'] =array('code'=>0b01000000000000010,'img'=>"sdc.png",'site'=>"http://www.ecoles-supdecom.com/");
+$Ecoles['WIS'] =array('code'=>0b11010000000000000,'img'=>"wis.png",'site'=>"http://www.wis-ecoles.com/");
 
 
 
@@ -168,7 +306,7 @@ foreach ($Ecoles as $value) {
     echo "<br>";
    }*/
    if (($value['code'] & $comparaison) == $comparaison) {
-    echo "<a href=\"\"><img class=\"logo\" src=\"Include/images/logopng/{$value['img']}\" alt=\"3a\" ></a>";
+    echo "<a href=\"{$value['site']}\"><img class=\"logo\" src=\"Include/images/logopng/{$value['img']}\" alt=\"3a\" ></a>";
    }
 }
 
