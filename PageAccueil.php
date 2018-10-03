@@ -124,8 +124,8 @@ margin:auto;
   <div id="choix" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded img-responsive" href="./PageEtudiant.php"><p id="text">Public</p></div></a>
 
   <div class="col-md-2 col-xs-2"></div>
-
-  <div id="choix1" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded"><p id="text" href="./pagePro.php >Professionel</p></div>
+<a href ="./pagePro.php">
+  <div id="choix1" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded"><p id="text">Professionel</p></div>
 
   <div class="col-md-1 col-xs-0"></div>
  
