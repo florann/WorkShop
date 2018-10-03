@@ -50,7 +50,7 @@ include('./Include/bootstrap.php');
 
    @font-face {
     font-family: "titillium-web";
-    src: url('police/titillium-web.ttf');
+    src: url('Include/police/titillium-web.ttf');
 }
 
 p
