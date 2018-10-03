@@ -106,11 +106,11 @@ margin:auto;
  <div class="col-md-1 col-xs-0"></div>
 
 <a href ="./richesse.php">
- <div id="choix" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded img-responsive"><p id="text">POURQUOI CHOISIR LE CAMPUS HEP?</p></div></a>
+ <div id="choix" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded img-responsive"><p id="text">POURQUOI CHOISIR LE CAMPUS HEP ?</p></div></a>
 
  <div class="col-md-2 col-xs-2"></div>
  <a href ="./ecoleApprenant.php">
- <div id="choix1" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded"><p id="text" >DANS QUEL ECOLE RECRUTER UN APPRENANT?</p></div>
+ <div id="choix1" class="col-md-4 md-auto col-xs-5 xs-auto img-rounded"><p id="text" >DANS QUEL ECOLE RECRUTER UN APPRENANT ?</p></div>
  </a>
 
  <div class="col-md-1 col-xs-0"></div>
