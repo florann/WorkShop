@@ -1,6 +1,9 @@
 
 <?php
 include('./Include/bootstrap.php');
+
+$S_See
+
 ?>
 <!DOCTYPE html>
 <html>
