@@ -22,22 +22,22 @@ $S_See
 	$(document).ready(function()
 	{
 		$("#choix").mouseover(function(){
-			$("#choix").css("background-color","004e79");
+			$("#choix").css("background-color","0082bc");
 
 		});
 		$("#choix").mouseout(function(){
-			$("#choix").css("background-color","0082bc");
+			$("#choix").css("background-color","004e79");
 		});
 	});
 
 	$(document).ready(function()
 	{
 		$("#choix1").mouseover(function(){
-			$("#choix1").css("background-color","004e79");
+			$("#choix1").css("background-color","0082bc");
 
 		});
 		$("#choix1").mouseout(function(){
-			$("#choix1").css("background-color","0082bc");
+			$("#choix1").css("background-color","004e79");
 		});
 	});
 
@@ -68,7 +68,7 @@ font-family: titillium-web;
 }
 #choix, #choix1
 {
-background-color : #0082bc;
+background-color : #004e79;
 max-width:50%;
 height:auto;
 text-align:center;
