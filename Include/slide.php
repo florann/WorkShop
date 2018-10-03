@@ -66,7 +66,7 @@ img {
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <img src="Include/images/logo-help-long.png" alt="logo-help"  style="margin-left:5%; margin-right:25%; width: auto; height: auto; max-width: 70%; max-height: 70%">
   <a href="PageAccueil.php">Accueil</a>
-  <a href="">Etudiant</a>
+  <a href="PageEtudiant.php">Etudiant</a>
   <a href="pagePro.php">professionnel</a>
   <a href="#">Contact</a>
 </div>
