@@ -1,0 +1,50 @@
+@font-face {
+font-family: "titillium-web";
+	src: url('police/titillium-web.ttf');
+}
+
+body{
+	background-color: #e5e5e5;
+}
+#cube{
+	margin-left:5%;
+	margin-right:5%;
+	
+}
+
+H1
+{
+	text-align: center;
+font-size: 26px;
+font-family: "titillium-web",serif;
+color:#fff;
+background-color:#004e79;/*:#193e5f;*/
+
+}
+
+H2
+{
+font-family: "titillium-web",serif;
+color:#baa347;	
+}
+p{
+	font-family: "titillium-web",serif;
+	color:#9d9d9d;
+	text-align: justify;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a.titre
+{
+	color:#baa347;
+}
+
+a:hover{
+	text-shadow: 0.1em 0.1em 0.2em #9d9d9d
+}
+
+
