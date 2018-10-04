@@ -1,21 +1,28 @@
+<?php
+include('./Include/bootstrap.php');
+?>
 <!DOCTYPE html>
 <html>
 
     <head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="Include/style.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-           
-	
-	<link rel="stylesheet" type="text/css">
-	<?php
-		include("slide.php");	
-     ?> 
-	
-    <title>Richesse</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css">
+	<a href="PageAccueil.php"><img class="img-responsive" src="Include/images/banniere.png" alt="logo-help"  style="widht:100%";></a>
+    </br>
+    <?php
+    include("Include/Slide.php");
+    ?>
+	<title>Richesse</title>
 	
 	<style>
+	
+body{
+	background-color: #e5e5e5;
+}
 	
 @font-face {
 
@@ -23,6 +30,24 @@ font-family: "titillium-web";
 
 	src: url('police/titillium-web.ttf');
 
+}
+
+p{
+	font-size:16px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "titillium-web",serif;
 }
 	
 .titre {
@@ -33,11 +58,13 @@ font-family: "titillium-web";
 	src: url('police/titillium-web.ttf');
 }
 
-.container p {
-	font-family: "titillium-web";
-
-	src: url('police/titillium-web.ttf');
+a {
+	color:white;
 }
+a:hover {
+	color:white;
+}
+
 
 .image {
 	opacity: 1;
@@ -53,7 +80,7 @@ font-family: "titillium-web";
   opacity: 0;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 45%; 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%)
 }
@@ -66,13 +93,6 @@ font-family: "titillium-web";
   opacity: 1;
 }
 
-.text {
-  background-color: #004e79;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-  margin:auto;
-}
 
 .popup-overlay {
 	visibility:hidden;
@@ -88,8 +108,7 @@ font-family: "titillium-web";
 	.popup-content {
 	visibility:hidden;
 	background-color: #616366;
-	 margin: 15% auto;
-	 padding: 20px;
+	 padding: 30px;
     border: 1px solid #888;
 	border-radius:2%;
 	color: white;
@@ -99,6 +118,11 @@ font-family: "titillium-web";
 	color: #aaa;
     font-size: 28px;
     font-weight: bold;
+	
+	}
+	
+	button.close{
+		padding-bottom:2%;
 	}
 	
 	.close:hover,
@@ -116,36 +140,44 @@ font-family: "titillium-web";
 	visibility:visible;
 	}
 	
+H1
+{
+	text-align: center;
+font-size: 26px;
+font-family: "titillium-web",serif;
+color:#fff;
+background-color:#004e79;/*:#193e5f;*/
+
+}
+	
 	</style>	
 	
 	
 	
 	</head>
     <body>
+	<H1>Pourquoi choisir le campus HEP ?</H1>
        <div class="container">   
 			<div class="row">
 			 <div class="col col-lg-2 "></div>
-			<div class="col-md-auto">
-				<h1 class="titre">Pourquoi choisir le campus HEP ?</h1>
-			</div>
 <br> <br> <br>
-			<div class="hep">
+			<div id="cube">
 			<p>
-			<h5>Acteur incontournable de la région Auvergne-Rhône-Alpes en matière de formation, le CAMPUS HEP Lyon – René Cassin
+			Acteur incontournable de la région Auvergne-Rhône-Alpes en matière de formation, le CAMPUS HEP Lyon – René Cassin
 			est le lieu fédérant la plus grande diversité d’écoles et de centres de formation de la région avec 13 filières de compétences métiers.
 			Ce lieu unique a été créé en 2004 et accueille aujourd’hui 7 200 apprenants  issus de ses 24 écoles et centres de formation
-			– de Bac à Bac+5 – sur une surface totale de 22 000m2</h5>
+			– de Bac à Bac+5 – sur une surface totale de 22 000m2
 			</p>
 			</div>	
 			
 			<div class="col col-lg-2"></div>
 			</div>
-<br> <br> <br>
+<br> <br>
 		<div class="row">
 			<div class="col">
 				 <img src="images/INFOTHEQUE.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 					<div class="middle">				
-						<button class="open1 btn btn-primary" >
+						<button class="open1 btn btn-primary btn-lg" >
 						INFOTHEQUE
 						</button>
 					</div>					
@@ -173,7 +205,7 @@ font-family: "titillium-web";
 			<div class="col">
 			<img src="images/LEARNING-LAB.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 				<div class="middle">				
-					<button class="open2 btn btn-primary" >
+					<button class="open2 btn btn-primary btn-lg" >
 					LEARNING-LAB
 					</button>
 				</div>
@@ -202,7 +234,7 @@ font-family: "titillium-web";
 			<div class="col">
 			<img src="images/VIE-ASSOCIATIVE.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open3 btn btn-primary" >
+					<button class="open3 btn btn-primary btn-lg" >
 					VIE-ASSOCIATIVE
 					</button>
 				</div>
@@ -224,12 +256,12 @@ font-family: "titillium-web";
 			</div>
 			
 			</div>
-<br> <br> <br>
+
 		<div class="row">
 			<div class="col">
 			<img src="images/CENTRE-ORIENTATION.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open4 btn btn-primary" >
+					<button class="open4 btn btn-primary btn-lg" >
 					CENTRE-ORIENTATION
 					</button>
 				</div>
@@ -257,7 +289,7 @@ font-family: "titillium-web";
 			<div class="col">
 			<img src="images/MyDil.png" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open5 btn btn-primary" >
+					<button class="open5 btn btn-primary btn-lg" >
 					MYDIL
 					</button>
 				</div>
@@ -292,7 +324,7 @@ font-family: "titillium-web";
 			<div class="col">
 			<img src="images/CAFETERIA.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open6 btn btn-primary">
+					<button class="open6 btn btn-primary btn-lg">
 					CAFETERIA
 					</button>
 				</div>
@@ -314,12 +346,12 @@ font-family: "titillium-web";
 
 		</div>
 		
-<br> <br> <br>	
+	
 		<div class="row">
 			<div class="col">
 			<img src="images/Amphi.jpg" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open7 btn btn-primary" >
+					<button class="open7 btn btn-primary btn-lg" >
 					AMPHITHEATRE
 					</button>
 				</div>
@@ -343,7 +375,7 @@ font-family: "titillium-web";
 		<div class="col">
 			<img src="images/INCUBATEUR.png" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open8 btn btn-primary" >
+					<button class="open8 btn btn-primary btn-lg" >
 					INCUBATEUR
 					</button>
 				</div>
@@ -374,8 +406,8 @@ font-family: "titillium-web";
 		<div class="col">
 			<img src="images/HEP.png" alt="Generic placeholder image" class="image" style="border-radius:50%;width:300px" >
 			<div class="middle">				
-					<button class="open9 btn btn-primary" >
-					CAMPUS HEP
+					<button class="open9 btn btn-primary btn-lg" > <a href="http://www.hep-education.com/campus/lyon">
+					CAMPUS HEP </a>
 					</button>
 			</div>
 		</div>
