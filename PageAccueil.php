@@ -8,7 +8,8 @@ $S_See
 <!DOCTYPE html>
 <html>
 <head>
-
+ <title>HELP - HEP Lyon - Professionnel</title>
+  <a href="PageAccueil.php"><img class="img-responsive" src="Include/images/banniere.png" alt="logo-help"  style="widht:100%";></a>
 <?php
 	include('./Include/slide.php');
 ?>
