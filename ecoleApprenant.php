@@ -1,12 +1,14 @@
+
+<?php
+include('./Include/bootstrap.php');
+?>
 <!DOCTYPE html>
 <html>
-
     <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Include/style.css" />
-    <title>heLpYON-Choisir une Ecole</title>
-
-    <a href="PageAccueil.php"><img src="Include/images/logo-help-long.png" alt="logo-help"  style="margin-left:2%; margin-right:2%; width: auto; height: auto; max-width: 25%; max-height: 25%"></a>
+    <title>HELP - HEP Lyon - Ecoles côté Pro</title>
+    <a href="PageAccueil.php"><img class="img-responsive" src="Include/images/banniere.png" alt="logo-help"  style="widht:100%";></a>
     </br>
     <?php
     include("Include/Slide.php");
@@ -139,6 +141,11 @@ font-family: "titillium-web";
 }
 
 </style>
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 <form name="metier" action="" method="post">
 <label class="container">
    <input type="checkbox" name="metier[]" value="Marketing" />Marketing<br>Management<br>Commerce
@@ -324,24 +331,14 @@ if(!$_POST['metier']){
 
     }  
 }
+
 foreach ($Ecoles as $value) {
- /*  //ca marche
-  if (($value & $comparaison) == $comparaison) {
-    echo decbin($value);
-    echo "<br>";
-}*/
-/*
-<div class="tooltip">Hover over me
-  <span class="tooltiptext">Tooltip text</span>
-</div>
-*/
    if (($value['code'] & $comparaison) == $comparaison) {
-    echo" <div class=\"tooltip\">";
+    echo" <div type=\"button\" class=\"btn btn-secondary\" data-toggle=\"tooltip\" data-placement=\"top\" title=\"{$value['description']}\">";
     
        echo"<a href=\"{$value['site']}\">";
     echo "<img class=\"logo\" src=\"Include/images/logopng/{$value['img']}\" alt=\"3a\" >";
     echo "</a>";
-    echo"<span class=\"tooltiptext\">{$value['description']}</span>";
     echo"</div>";
    }
 }

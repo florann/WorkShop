@@ -8,10 +8,9 @@ include('./Include/bootstrap.php');
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="Include/style.css" />
-  <title>heLpYON-Professionnel</title>
-
-
-    <a href="PageAccueil.php"><img src="Include/images/logo-help-long.png" alt="logo-help"  style="margin-left:2%; margin-right:2%; width: auto; height: auto; max-width: 25%; max-height: 25%"></a>
+  <title>HELP - HEP Lyon - Professionnel</title>
+  <a href="PageAccueil.php"><img class="img-responsive" src="Include/images/banniere.png" alt="logo-help"  style="widht:100%";></a>
+  
   </br>
   <?php
   include("Include/slide.php");
@@ -68,8 +67,8 @@ margin:auto;
      par les valeurs &#8722 Humanisme Entrepreneuriat Professionnalisme 
      &#8722 et pour imaginer ensemble le nouveau mod&egravele &eacuteducatif de demain. <p> 
    </div>
-  <img src="Include\images\VIE-ASSOCIATIVE-300x200.jpg" alt="VIE-ASSOCIATIVE" style="display: block;margin-left: auto;margin-right: auto ">
-  
+  <!--<img class=img-responsive src="Include\images\VIE-ASSOCIATIVE-300x200.jpg" alt="VIE-ASSOCIATIVE" style=" width:100%; display: block;margin-left: auto;margin-right: auto ">-->
+  <img src="Include\images\VIE-ASSOCIATIVE-300x200.jpg" alt="VIE-ASSOCIATIVE" style=" display: block;margin-left: auto;margin-right: auto ">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>

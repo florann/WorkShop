@@ -68,7 +68,7 @@ img {
   <a href="PageAccueil.php">Accueil</a>
   <a href="PageEtudiant.php">Etudiant</a>
   <a href="pagePro.php">professionnel</a>
-  <a href="http://www.hep-education.com/contact/">Contact</a>
+  <a href="#">Contact</a>
 </div>
 
 <span style="cursor:pointer" class="menus" onclick="openNav()">&#9776; Menu</span>
